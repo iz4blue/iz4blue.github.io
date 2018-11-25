@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "Azure 에서 ubuntu 서버 만들기"
+date:   2018-11-15 12:00:00 +0900
+categories: [Azure]
+---
 # Azure 에서 ubuntu 서버 만들기
 
 ## 목표 정하기

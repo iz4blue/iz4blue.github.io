@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "Jekyll(자킬) 로 github.io 발행하기 #1"
+date:   2018-11-25 17:30:00 +0900
+categories: [jekyll]
+---
 # Jekyll(자킬) 로 github.io 발행하기 #1
 
 ## 목표 정하기
@@ -27,10 +33,10 @@ $ jekyll serve -H 0.0.0.0
   - https://jekyllthemes.io/free
   - http://jekyllthemes.org/
 - 마음에 드는 몇가지 테마들
-  - https://volny.github.io/creative-theme-jekyll/#
-  - https://phlow.github.io/feeling-responsive/search/
+  - https://volny.github.io/creative-theme-jekyll/
+  - https://phlow.github.io/feeling-responsive/
   - http://wiredcraft.github.io/carte/
-  - http://jekyller.github.io/jasper/tag/fiction/
+  - http://jekyller.github.io/jasper/
   - https://agusmakmun.github.io/
   - http://vfalanis.github.io/taken/
 
@@ -44,8 +50,11 @@ $ jekyll serve -H 0.0.0.0
 - [macdown](https://macdown.uranusjr.com/)
   - 다 좋은데 이미지의 연결이 jekyll 와 적절하게 연동이 되지 않는다.
 
-### github 에 repository 만들기
+### github 에 repository 만들어서 적용해보기
 - 가급적 문제되는 충돌을 피하기 위해서 별다른 파일을 만들지 말자
 - .gitignore 에 jekyll 테마가 있다.
+- repository 를 만들고 보니 가급적(?) 만들어진 테마를 fork 하는 것이 좋을 수도 있겠는데, 일단 만들어보고 고민하기로 ...
+- 그래서 zip 파일을 받아서 일일히 파일을 맞춰주기로 함
+- 
 
 ### 실제 배포해보기
