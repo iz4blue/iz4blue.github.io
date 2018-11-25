@@ -1,0 +1,57 @@
+title: 눈빛마음의 TIL(Today I Learned) 블로그
+description: 눈빛마음이 하루하루 알게 되는 내용을 정리해서 블로깅을 해보려 합니다.
+author: Joseph Kim
+github: https://github.com/iz4blue
+about: I am crative developer. Currently doing more in backend, focused in Python and Django.
+disqus_shortname:
+google_analytics: UA-XXXXXXXX-Y
+avatar_url: /static/img/avatar.jpg
+
+enableTags: true
+tagarray: []
+
+collections:
+  project:
+    output: true
+    permalink: /project/:path/
+
+social:
+    - icon: fa-facebook
+      link: "#"
+    - icon: fa-twitter
+      link: "#"
+    - icon: fa-linkedin
+      link: "#"
+    - icon: fa-stack-exchange
+      link: "#"
+    - icon: fa-github
+      link: "https://github.com/iz4blue"
+
+share:
+  twitter_username: ...
+  fb_appid: ...
+
+urls:
+    - text: About Me
+      url: /about/
+    - text: My Projects
+      url: /projects/
+    - text: XML Feed
+      url: /feed.xml
+
+url: "https://iz4blue.github.io"
+baseurl: ""
+paginate: 20
+per_page: 20
+paginate_path: "/page/:num/"
+markdown: kramdown
+gems:
+  - jekyll-paginate
+  - jekyll-gist
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: ['development']
