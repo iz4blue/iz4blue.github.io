@@ -55,6 +55,34 @@ $ jekyll serve -H 0.0.0.0
 - .gitignore 에 jekyll 테마가 있다.
 - repository 를 만들고 보니 가급적(?) 만들어진 테마를 fork 하는 것이 좋을 수도 있겠는데, 일단 만들어보고 고민하기로 ...
 - 그래서 zip 파일을 받아서 일일히 파일을 맞춰주기로 함
-- 
 
 ### 실제 배포해보기
+- 만들어둔 Azure 머신에 repository 갱신
+```bash
+$ git clone https://github.com/iz4blue/iz4blue.github.io
+$ cd iz4blue.github.io
+```
+- 설치되어 있지 않는 jekyll plugin 설치 되도록 bundle install 을 수행함
+```bash
+$ bundle install
+```
+- 예전부터 참 골치 아프게 했던 [nokogiri](https://www.nokogiri.org/) 이번에도 문제가 되는 상황
+- 찾아보니 라이브러리가 없어서 생기는 문제군요.
+  - https://www.hahwul.com/2018/03/ruby-nokogiri-installupdate-error.html
+```bash
+$ sudo apt-get install zlib1g-dev
+```
+
+### 이제 작성하던 내용을 확인해보자
+- 일단 잘 동작하는지 확인
+```bash
+$ jekyll serve -H 0.0.0.0
+```
+- 브라우져로 접속해서 페이지가 원하는데로 뜨는지 확인
+
+### 이제 static page 들을 만들어서 발행하자
+- 공식 페이지에서 이야기 하는 것 처럼 일단 build 해보자
+```bash
+$ JEKYLL_ENV=production bundle exec jekyll build
+```
+- 
