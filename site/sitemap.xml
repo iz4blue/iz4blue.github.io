@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>눈빛마음의 TIL(Today I Learned) 블로그</title>
+    <description>눈빛마음이 하루하루 알게 되는 내용을 정리해서 블로깅을 해보려 합니다.</description>
+    <link>https://iz4blue.github.io/</link>
+    <atom:link href="https://iz4blue.github.io/sitemap.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 25 Nov 2018 09:02:36 +0000</pubDate>
+    <lastBuildDate>Sun, 25 Nov 2018 09:02:36 +0000</lastBuildDate>
+    <generator>Jekyll v3.7.3</generator>
+    
+      <item>
+        <title>Jekyll(자킬) 로 github.io 발행하기 #1</title>
+        <description>&lt;h1 id=&quot;jekyll자킬-로-githubio-발행하기-1&quot;&gt;Jekyll(자킬) 로 github.io 발행하기 #1&lt;/h1&gt;
+
+&lt;h2 id=&quot;목표-정하기&quot;&gt;목표 정하기&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Jekyll 이 어떻게 동작하는지 파악해보기&lt;/li&gt;
+  &lt;li&gt;Azure 에 Jekyll 이 동작하는 머신 만들기&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jekyllrb.com/docs/step-by-step/01-setup/&quot;&gt;Tutorial&lt;/a&gt; 을 따라하면서 가장 심플한 동작 파악하기&lt;/li&gt;
+  &lt;li&gt;테마를 정하고 github.io 에 연결하기&lt;/li&gt;
+  &lt;li&gt;실제 발행하기&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;work-log&quot;&gt;Work Log&lt;/h1&gt;
+
+&lt;h2 id=&quot;azure-에-jekyll-동작-환경-만들기&quot;&gt;Azure 에 Jekyll 동작 환경 만들기&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Azure ubuntu 가상머신 만들기 참조&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jekyllrb.com/docs/installation/ubuntu/&quot;&gt;Jekyll on Ubuntu&lt;/a&gt; 를 따라하니 별 어려움 없이 잘 설치 됨&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;tutorial-따라하기&quot;&gt;Tutorial 따라하기&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;큰 어려움 없이 파일 변경이 실시간으로 적용되어서 매우 편했음&lt;/li&gt;
+  &lt;li&gt;Azure 에 TCP 4000 Port 가 모든 IP 에서 접속할 수 있도록 환경 수정&lt;/li&gt;
+  &lt;li&gt;외부에서 접속 할 수 있게 하기 위해서 Host 옵션만 추가하여 실행함&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;jekyll serve &lt;span class=&quot;nt&quot;&gt;-H&lt;/span&gt; 0.0.0.0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;테마를-정하기&quot;&gt;테마를 정하기&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;다음 2개의 사이트에서 여러 테마를 찾아 보았음
+    &lt;ul&gt;
+      &lt;li&gt;https://jekyllthemes.io/free&lt;/li&gt;
+      &lt;li&gt;http://jekyllthemes.org/&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;마음에 드는 몇가지 테마들
+    &lt;ul&gt;
+      &lt;li&gt;https://volny.github.io/creative-theme-jekyll/&lt;/li&gt;
+      &lt;li&gt;https://phlow.github.io/feeling-responsive/&lt;/li&gt;
+      &lt;li&gt;http://wiredcraft.github.io/carte/&lt;/li&gt;
+      &lt;li&gt;http://jekyller.github.io/jasper/&lt;/li&gt;
+      &lt;li&gt;https://agusmakmun.github.io/&lt;/li&gt;
+      &lt;li&gt;http://vfalanis.github.io/taken/&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;githubio-에-배포할-준비하기&quot;&gt;GITHUB.IO 에 배포할 준비하기&lt;/h2&gt;
+&lt;h3 id=&quot;기술적인-고민에-참고했던-몇몇-국내-블로그&quot;&gt;기술적인 고민에 참고했던 몇몇 국내 블로그&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;https://www.theteams.kr/teams/2440/post/67297&lt;/li&gt;
+  &lt;li&gt;http://jihyeleee.com/blog/third-designer-can-make-jekyll-blog/&lt;/li&gt;
+  &lt;li&gt;https://github.com/ridicorp/ridicorp.github.io&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;markdown-에디터-찾아보기&quot;&gt;markdown 에디터 찾아보기&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://macdown.uranusjr.com/&quot;&gt;macdown&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;다 좋은데 이미지의 연결이 jekyll 와 적절하게 연동이 되지 않는다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;github-에-repository-만들어서-적용해보기&quot;&gt;github 에 repository 만들어서 적용해보기&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;가급적 문제되는 충돌을 피하기 위해서 별다른 파일을 만들지 말자&lt;/li&gt;
+  &lt;li&gt;.gitignore 에 jekyll 테마가 있다.&lt;/li&gt;
+  &lt;li&gt;repository 를 만들고 보니 가급적(?) 만들어진 테마를 fork 하는 것이 좋을 수도 있겠는데, 일단 만들어보고 고민하기로 …&lt;/li&gt;
+  &lt;li&gt;그래서 zip 파일을 받아서 일일히 파일을 맞춰주기로 함&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;실제-배포해보기&quot;&gt;실제 배포해보기&lt;/h3&gt;
+</description>
+        <pubDate>Sun, 25 Nov 2018 08:30:00 +0000</pubDate>
+        <link>https://iz4blue.github.io/jekyll/2018/11/25/Jekyll(%EC%9E%90%ED%82%AC)-%EB%A1%9C-github.io-%EB%B0%9C%ED%96%89%ED%95%98%EA%B8%B0-1.html</link>
+        <guid isPermaLink="true">https://iz4blue.github.io/jekyll/2018/11/25/Jekyll(%EC%9E%90%ED%82%AC)-%EB%A1%9C-github.io-%EB%B0%9C%ED%96%89%ED%95%98%EA%B8%B0-1.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+      </item>
+    
+      <item>
+        <title>Azure 에서 ubuntu 서버 만들기</title>
+        <description>&lt;h1 id=&quot;azure-에서-ubuntu-서버-만들기&quot;&gt;Azure 에서 ubuntu 서버 만들기&lt;/h1&gt;
+
+&lt;h2 id=&quot;목표-정하기&quot;&gt;목표 정하기&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;ubuntu 16.04&lt;/li&gt;
+  &lt;li&gt;ssh 접속하기&lt;/li&gt;
+  &lt;li&gt;외부에서 접속 가능한 port 열기&lt;/li&gt;
+  &lt;li&gt;가장 싼 환경으로 구성해보기&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;azure-에서-가상서버-리소스를-만들기&quot;&gt;Azure 에서 가상서버 리소스를 만들기&lt;/h1&gt;
+&lt;h2 id=&quot;가상머신-즐겨찾기-메뉴에서-시작&quot;&gt;가상머신 즐겨찾기 메뉴에서 시작&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/posts/img/2018-11-15/image-001.png&quot; alt=&quot;즐겨찾기에서 가상머신 찾기&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;즐겨메뉴에-없다면-모든-서비스에서-찾는다&quot;&gt;즐겨메뉴에 없다면 모든 서비스에서 찾는다&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/posts/img/2018-11-15/image-002.png&quot; alt=&quot;모든서비스에서 가상머신 찾기&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;비용은-b1s-가-가장-싸다&quot;&gt;비용은 B1S 가 가장 싸다&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;2018/11/15일 기준으로 검색해보면 1시간당 약 14.63원 이란다 (물론 디스크 사이즈 혹은 기타 조검에 의해서 변경될 수 있음)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/posts/img/2018-11-15/image-004.png&quot; alt=&quot;가장 싼 가상머신 찾기&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;상황적인-문제-해결&quot;&gt;상황적인 문제 해결&lt;/h1&gt;
+&lt;h2 id=&quot;azure-pass-에-따라서-지역선택이-불가능-한-경우&quot;&gt;Azure pass 에 따라서 지역선택이 불가능 한 경우&lt;/h2&gt;
+</description>
+        <pubDate>Thu, 15 Nov 2018 03:00:00 +0000</pubDate>
+        <link>https://iz4blue.github.io/azure/2018/11/15/Azure-%EC%97%90%EC%84%9C-ubuntu-%EC%84%9C%EB%B2%84-%EB%A7%8C%EB%93%A4%EA%B8%B0.html</link>
+        <guid isPermaLink="true">https://iz4blue.github.io/azure/2018/11/15/Azure-%EC%97%90%EC%84%9C-ubuntu-%EC%84%9C%EB%B2%84-%EB%A7%8C%EB%93%A4%EA%B8%B0.html</guid>
+        
+        
+        <category>Azure</category>
+        
+      </item>
+    
+  </channel>
+</rss>
